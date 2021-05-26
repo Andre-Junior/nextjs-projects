@@ -1,7 +1,7 @@
 import { parseISO, format } from 'date-fns';
 
 
-export default function Date({dateSting}) {
-    const date = parseISO(dateSting)
-    return <time dateTime={dateSting}>{format(date, 'LLLL d, yyyy')}</time>
+export default function Date({dateString}) {
+    const date = parseISO(dateString)
+    return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>
 }
